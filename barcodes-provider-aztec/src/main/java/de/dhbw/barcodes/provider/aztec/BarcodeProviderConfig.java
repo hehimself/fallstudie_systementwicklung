@@ -50,7 +50,7 @@ public class BarcodeProviderConfig extends ABarcodeProviderConfig
 				String.valueOf(DEFAULT_IMAGEWIDTH));
 		l_properties.setProperty(BarcodeProviderConfig.PROPERTY_BARCODE_API_IMAGEHEIGHT,
 				String.valueOf(DEFAULT_IMAGEHIGHT));
-		l_properties.setProperty(BarcodeProviderConfig.PROPERTY_BARCODE_API_IMAGETYPE, String.valueOf(DEFAULT_IMAGETYPE));
+		l_properties.setProperty(BarcodeProviderConfig.PROPERTY_BARCODE_API_IMAGETYPE, DEFAULT_IMAGETYPE);
 
 		return l_properties;
 	}
@@ -79,7 +79,7 @@ public class BarcodeProviderConfig extends ABarcodeProviderConfig
 		imageHeight = Integer.parseInt(
 				p_properties.getProperty(PROPERTY_BARCODE_API_IMAGEHEIGHT, String.valueOf(DEFAULT_IMAGEHIGHT)));
 
-		imageType = p_properties.getProperty(PROPERTY_BARCODE_API_IMAGETYPE, String.valueOf(DEFAULT_IMAGETYPE));
+		imageType = p_properties.getProperty(PROPERTY_BARCODE_API_IMAGETYPE, DEFAULT_IMAGETYPE);
 	}
 
 }

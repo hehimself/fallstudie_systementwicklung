@@ -30,7 +30,18 @@ public class BarcodeProvider extends ABarcodeProvider
 	@Override
 	public boolean isImageTypeSupported(final String p_imageType)
 	{
-		// TODO: implement your logic here
-		throw new UnsupportedOperationException();
+		if (p_imageType == null)
+		{
+			return false;
+		}
+
+		switch (p_imageType.toLowerCase())
+		{
+			case "png":
+			case "jpg":
+				return true;
+			default:
+				return false;
+		}
 	}
 }
